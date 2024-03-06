@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="bigbox">
+  <div class="first" style="color: white;">
+     <h2 class="calc" style=" position:relative;
+     margin-bottom:0px; padding: 0; margin-right:00px;"> clac</h2>
+      <p class="theme" style=" position:relative;
+      margin-bottom:0px; padding: 0; margin-top:22.920px; font-size:13px;">Theme</p>
+     <button class="togg" onclick="move(),theme()" ></button>
+     <div class="circle" id="mover"></div>
+</div>
+  <div class="second">
+    <input type="numbers" class="inp" id="use">
+  </div>
+ <div class="third" >
+    <div class="row1">
+      <button class="g sev">7</button>
+      <button class="g eight">8</button>
+      <button class="g nine">9</button>
+      <button class="Del" style="background-color: hsl(225, 21%, 49%);color:white;">Del</button>  
+    
+    </div>
+    <div class="row2">
+      <button class="g four">4</button>
+      <button class="g five">5</button>
+      <button class="g six">6</button>
+      <button class="g plus">+</button>
+
+    </div>
+    <div class="row3">
+      <button class="g one">1</button>
+      <button class="g two">2</button>
+      <button class="g three">3</button>
+      <button class="g sub">-</button>
+
+    </div>
+    <div class="row4">
+      <button class="g dot">.</button>
+      <button class="g zero">0</button>
+      <button class="g div">/</button>
+      <button class="g X">X</button>
+
+    </div>
+    <div class="row5">
+      <button class="reset" style="grid-area:5/1/6/3; background-color: hsl(225, 21%, 49%); color:white; font-size:70px;">reset</button>
+      <button class="equal" style="grid-area:5/3/6/5;background-color: hsl(6, 63%, 50%); text-shadow: hsl(6, 70%, 34%); font-size: 70px;
+      ;color:white;">=</button>
+
+    </div>
+ </div>
+</div>
+<script src="index.js" charset="UTF-8"></script>
+</body>
+</html>

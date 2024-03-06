@@ -1,0 +1,132 @@
+body{
+    background-color:  hsl(222, 26%, 31%);
+}
+
+h2{
+    font-family: "League Spartan", sans-serif;
+    font-weight: 800;
+    
+}
+div button{
+    font-family: "League Spartan", sans-serif;
+    font-size: 32px;
+}
+.bigbox{
+    position: relative;
+    margin-top: 5%;
+  display:flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.bigbox .first{
+  display:grid;
+  grid-template-columns: 600px 40px 40px;
+  width:730px;
+  grid-row: 30px;
+}
+
+.bigbox .second .inp{
+    position: relative; width: 729px; border-radius: 10px; text-align: right; height:60px; background-color: hsl(224, 36%, 15%); font-size:30px; color: white;
+}
+  
+
+.bigbox .third{
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr;
+    background-color: hsl(223, 31%, 20%);
+    padding: 20px;
+    border-radius: 15px;
+    height:500px;
+    width: 700px;
+}
+.bigbox .third div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:10px
+}
+.bigbox .third button{
+    border-radius: 10px;
+    height: 50px;
+    color:hsl(224, 28%, 35%); 
+    text-shadow: hsl(224, 28%, 35%);
+}
+.bigbox .third .row1+.row2+.row3+.row4 button{
+    background-color: hsl(30, 25%, 89%);
+    height:80px;
+}
+.bigbox .third .row1 button{
+    background-color: hsl(30, 25%, 89%);
+    height:80px;
+}
+.bigbox .third .row2 button{
+    background-color: hsl(30, 25%, 89%);
+    height:80px;
+}
+.bigbox .third .row3 button{
+    background-color: hsl(30, 25%, 89%);
+    height:80px;
+}
+.bigbox .third .row5 button{
+    background-color: hsl(30, 25%, 89%);
+    height:80px;
+}
+.bigbox .first .togg{
+    background-color: hsl(223, 31%, 20%);
+    margin-top:15px;
+    position: relative;
+    margin-right: 30px ;
+    width:90px;
+    border-radius: 20px;
+    height: 30px;
+}
+.bigbox .first .circle{
+    background-color:hsl(6, 63%, 50%);
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    left: 646px;
+    bottom:27px ;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      width: auto;
+      height: 300px;
+    }
+    .bigbox .first{
+        grid-template-columns: 200px 20px 20px;
+        width:400px;
+        height: 70px;
+    }
+
+    .bigbox .first .circle{
+        left: 294px;
+    }
+    .bigbox .first .togg{
+        left: 70px;
+        width: 70px;
+
+    }
+    .bigbox .first .calc{
+        left: 40px;
+    }
+    .bigbox .second{
+        width:380px ;
+
+    }
+    .bigbox .second .inp{
+        width: 340px;
+        position: relative;
+       
+        left: 18px;
+    }
+    .bigbox .third{
+        width:310px;
+    }
+  }
+  
